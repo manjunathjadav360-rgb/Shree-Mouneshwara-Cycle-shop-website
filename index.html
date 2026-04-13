@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Mouneshwara Cycle Shop</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f6ff;}
+
+/* Navbar */
+nav{
+background:#0d47a1;
+padding:15px;
+text-align:center;
+}
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Slider */
+.slider{
+width:100%;
+height:300px;
+overflow:hidden;
+}
+.slides{
+display:flex;
+width:300%;
+animation:slide 9s infinite;
+}
+.slides img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+@keyframes slide{
+0%{margin-left:0;}
+33%{margin-left:-100%;}
+66%{margin-left:-200%;}
+100%{margin-left:0;}
+}
+
+/* Sections */
+section{
+padding:60px;
+text-align:center;
+}
+
+/* Cards */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+/* Button */
+button{
+padding:10px;
+background:#ff5722;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Contact */
+.contact{
+background:#0d47a1;
+color:white;
+padding:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- SLIDER -->
+<div class="slider">
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1518655048521-f130df041f66">
+<img src="https://images.unsplash.com/photo-1505705694340-019e1e335916">
+<img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182">
+</div>
+</div>
+
+<section>
+<h1>🚲 Shree Mouneshwara Cycle Shop</h1>
+
+<h2>🔥 “Best Cycle Repair Shop in Lingasugur – Trusted by Hundreds of Customers”</h2>
+
+<p>
+We provide high-quality cycle repair and genuine <b>Ramson company spare parts</b> at affordable prices.
+</p>
+
+<p>
+ನಮ್ಮಲ್ಲಿ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಸೈಕಲ್ ರಿಪೇರಿ ಸೇವೆಗಳು ಮತ್ತು ಮೂಲ ರಾಮ್ಸನ್ ಕಂಪನಿ ಭಾಗಗಳು ಲಭ್ಯವಿವೆ.
+ಗ್ರಾಹಕರ ತೃಪ್ತಿ ನಮ್ಮ ಮೊದಲ ಆದ್ಯತೆ.
+</p>
+</section>
+
+<section id="about">
+<h2>About Us / ನಮ್ಮ ಬಗ್ಗೆ</h2>
+
+<p>
+At Shree Mouneshwara Cycle Shop, we believe in providing **honest service, durable products, and quick repair solutions**.
+</p>
+
+<p>
+✔ 10+ years experience  
+✔ Trusted by local customers  
+✔ Affordable pricing  
+✔ Fast service  
+</p>
+
+<p>
+ನಾವು ಗ್ರಾಹಕರಿಗೆ ಗೌರವಪೂರ್ಣ ಸೇವೆ ನೀಡುತ್ತೇವೆ ಮತ್ತು ಉತ್ತಮ ಗುಣಮಟ್ಟದ ವಸ್ತುಗಳನ್ನು ಮಾತ್ರ ಮಾರುತ್ತೇವೆ.
+</p>
+</section>
+
+<section id="products">
+<h2>🛠️ Our Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+<h3>Cycle Tyres</h3>
+<p>Strong and durable tyres</p>
+<button onclick="order('Tyre')">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571333250630-f0230c320b6d">
+<h3>Cycle Tubes</h3>
+<p>Long-lasting tubes</p>
+<button onclick="order('Tube')">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e">
+<h3>Spare Parts</h3>
+<p>All cycle parts available</p>
+<button onclick="order('Spare Parts')">Order Now</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>🚴 Our Services</h2>
+
+<p>✔ Complete Cycle Repair</p>
+<p>✔ Tyre & Tube Replacement</p>
+<p>✔ Brake Adjustment</p>
+<p>✔ Gear Cycle Service</p>
+
+<p>
+“Fast service, genuine parts, and affordable price – that’s our promise.”
+</p>
+
+</section>
+
+<section>
+<h2>💬 Why Customers Choose Us</h2>
+
+<p>✔ Friendly service</p>
+<p>✔ Genuine Ramson products</p>
+<p>✔ Quick repair time</p>
+
+<p>
+“ನಮ್ಮ ಸೇವೆಯನ್ನು ಒಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ – ನೀವು ಖಂಡಿತ ತೃಪ್ತರಾಗುತ್ತೀರಿ.”
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+<h2>📍 Contact</h2>
+
+<p><b>Owner:</b> Mounesh Jadhav</p>
+<p><b>Phone:</b> 9482081433</p>
+
+<p>
+<b>Email:</b>
+<a href="mailto:manishjadav180@gmail.com" style="color:yellow;">
+manishjadav180@gmail.com
+</a>
+</p>
+
+<p>
+Junior College Opposite, Near Raghavendra Temple,<br>
+Bus Stand Near, Lingasugur
+</p>
+
+</section>
+
+<script>
+function order(item){
+window.location.href="mailto:manishjadav180@gmail.com?subject=Order&body=I want to order "+item;
+}
+</script>
+
+</body>
+</html>
